@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Culture Rating</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="range"] {
+            width: 100%;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Company Culture Rating</h1>
+        <p>Rate your company's culture and share your experience!</p>
+    </header>
+    <div class="container">
+        <form id="ratingForm">
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" name="companyName" required placeholder="Enter company name">
+
+            <h2>Rate on the Following Parameters (1-10):</h2>
+            <label for="mission">1. Mission, Vision, and Core Values:</label>
+            <input type="range" id="mission" name="mission" min="1" max="10">
+
+            <label for="leadership">2. Leadership Style:</label>
+            <input type="range" id="leadership" name="leadership" min="1" max="10">
+
+            <label for="communication">3. Communication Practices:</label>
+            <input type="range" id="communication" name="communication" min="1" max="10">
+
+            <label for="employeeAttitudes">4. Employee Behaviors and Attitudes:</label>
+            <input type="range" id="employeeAttitudes" name="employeeAttitudes" min="1" max="10">
+
+            <label for="workEnvironment">5. Work Environment:</label>
+            <input type="range" id="workEnvironment" name="workEnvironment" min="1" max="10">
+
+            <label for="rewards">6. Recognition and Rewards:</label>
+            <input type="range" id="rewards" name="rewards" min="1" max="10">
+
+            <label for="decisionMaking">7. Decision-Making Processes:</label>
+            <input type="range" id="decisionMaking" name="decisionMaking" min="1" max="10">
+
+            <label for="learning">8. Learning and Development Opportunities:</label>
+            <input type="range" id="learning" name="learning" min="1" max="10">
+
+            <label for="workLifeBalance">9. Work-Life Balance and Employee Well-being:</label>
+            <input type="range" id="workLifeBalance" name="workLifeBalance" min="1" max="10">
+
+            <label for="stories">10. Organizational Stories and Traditions:</label>
+            <input type="range" id="stories" name="stories" min="1" max="10">
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="5" placeholder="Share your experience..."></textarea>
+
+            <button type="submit">Submit Rating</button>
+        </form>
+    </div>
+</body>
+</html>
